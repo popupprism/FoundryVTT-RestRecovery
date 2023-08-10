@@ -26,6 +26,7 @@ const CONSTANTS = {
      *            Short Rest Settings            *
      *-------------------------------------------*/
     IGNORE_INACTIVE_PLAYERS: "ignore-inactive-players",
+    HEALERS_KIT_DEPENDENCY: "healers-kit-dependency",
     MAX_SHORT_RESTS: "max-short-rests-per-long-rest",
     MIN_HIT_DIE_SPEND: "minimum-hit-die-spend",
     MAX_HIT_DICE_SPEND: "maximum-hit-die-spend",
@@ -206,6 +207,15 @@ CONSTANTS.DEFAULT_SETTINGS = {
   [CONSTANTS.SETTINGS.IGNORE_INACTIVE_PLAYERS]: {
     name: "REST-RECOVERY.Settings.ShortRest.IgnoreInactive.Title",
     hint: "REST-RECOVERY.Settings.ShortRest.IgnoreInactive.Hint",
+    scope: "world",
+    group: "shortrest",
+    config: false,
+    default: false,
+    type: Boolean
+  },
+  [CONSTANTS.SETTINGS.HEALERS_KIT_DEPENDENCY]: {
+    name: "REST-RECOVERY.Settings.ShortRest.HealersKitDependency.Title",
+    hint: "REST-RECOVERY.Settings.ShortRest.HealersKitDependency.Hint",
     scope: "world",
     group: "shortrest",
     config: false,
